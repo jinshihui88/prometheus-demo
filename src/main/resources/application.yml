@@ -1,0 +1,45 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: prometheus-demo
+
+management:
+  # 将管理端点放在独立端口，便于网络隔离
+  server:
+    port: 8081
+
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: health,info,prometheus,metrics
+
+  endpoint:
+    health:
+      show-details: never
+
+  info:
+    # Boot 3.5 起 env 型 info 贡献者默认关闭，显式开启后 info.* 配置才会出现在 /actuator/info
+    env:
+      enabled: true
+
+  metrics:
+    # 为所有指标增加 application 标签，多应用环境下便于筛选
+    tags:
+      application: ${spring.application.name}
+
+    distribution:
+      # 为 HTTP 请求生成可用于分位数估算的直方图桶
+      percentiles-histogram:
+        http.server.requests: true
+      # 按 SLO 档位观察请求耗时
+      slo:
+        http.server.requests: 100ms,300ms,1s
+
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+    description: Spring Boot Prometheus Demo

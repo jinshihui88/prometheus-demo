@@ -1,0 +1,86 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:prometheus-demo >---------------------
+[INFO] Building prometheus-demo 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ prometheus-demo ---
+[INFO] Deleting D:\project\prometheus-demo\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ prometheus-demo ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ prometheus-demo ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ prometheus-demo ---
+[INFO] skip non existing resourceDirectory D:\project\prometheus-demo\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ prometheus-demo ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ prometheus-demo ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.prometheusdemo.PrometheusDemoApplicationTests
+15:55:06.514 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.prometheusdemo.PrometheusDemoApplicationTests]: PrometheusDemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:55:06.593 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.prometheusdemo.PrometheusDemoApplication for test class com.example.prometheusdemo.PrometheusDemoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-24T15:55:06.905+08:00  INFO 23720 --- [prometheus-demo] [           main] c.e.p.PrometheusDemoApplicationTests     : Starting PrometheusDemoApplicationTests using Java 17.0.12 with PID 23720 (started by Administrator in D:\project\prometheus-demo)
+2026-11-24T15:55:06.906+08:00  INFO 23720 --- [prometheus-demo] [           main] c.e.p.PrometheusDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2026-11-24T15:55:07.790+08:00  INFO 23720 --- [prometheus-demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-11-24T15:55:07.801+08:00  INFO 23720 --- [prometheus-demo] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-24T15:55:07.801+08:00  INFO 23720 --- [prometheus-demo] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-11-24T15:55:07.844+08:00  INFO 23720 --- [prometheus-demo] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-24T15:55:07.845+08:00  INFO 23720 --- [prometheus-demo] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 927 ms
+2026-11-24T15:55:08.460+08:00  INFO 23720 --- [prometheus-demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 52824 (http) with context path '/'
+2026-11-24T15:55:08.519+08:00  INFO 23720 --- [prometheus-demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-11-24T15:55:08.520+08:00  INFO 23720 --- [prometheus-demo] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-24T15:55:08.520+08:00  INFO 23720 --- [prometheus-demo] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-11-24T15:55:08.534+08:00  INFO 23720 --- [prometheus-demo] [           main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-11-24T15:55:08.535+08:00  INFO 23720 --- [prometheus-demo] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 72 ms
+2026-11-24T15:55:08.544+08:00  INFO 23720 --- [prometheus-demo] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-11-24T15:55:08.570+08:00  INFO 23720 --- [prometheus-demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 52825 (http) with context path '/'
+2026-11-24T15:55:08.579+08:00  INFO 23720 --- [prometheus-demo] [           main] c.e.p.PrometheusDemoApplicationTests     : Started PrometheusDemoApplicationTests in 1.896 seconds (process running for 2.516)
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-11-24T15:55:09.151+08:00  INFO 23720 --- [prometheus-demo] [o-auto-2-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2026-11-24T15:55:09.151+08:00  INFO 23720 --- [prometheus-demo] [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServletRegistration'
+2026-11-24T15:55:09.152+08:00  INFO 23720 --- [prometheus-demo] [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-24T15:55:09.573+08:00  INFO 23720 --- [prometheus-demo] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-24T15:55:09.574+08:00  INFO 23720 --- [prometheus-demo] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-24T15:55:09.574+08:00  INFO 23720 --- [prometheus-demo] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.354 s -- in com.example.prometheusdemo.PrometheusDemoApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ prometheus-demo ---
+[INFO] Building jar: D:\project\prometheus-demo\target\prometheus-demo-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ prometheus-demo ---
+[INFO] Replacing main artifact D:\project\prometheus-demo\target\prometheus-demo-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to D:\project\prometheus-demo\target\prometheus-demo-1.0.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.115 s
+[INFO] Finished at: 2026-11-24T15:55:10+08:00
+[INFO] ------------------------------------------------------------------------
